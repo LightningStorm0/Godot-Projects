@@ -1,0 +1,340 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://dungeon_tiles.png" type="Texture" id=1]
+
+[sub_resource type="SegmentShape2D" id=1]
+a = Vector2( -8, 0 )
+b = Vector2( 8, 0 )
+
+[sub_resource type="SegmentShape2D" id=2]
+a = Vector2( -0.0412903, -8 )
+b = Vector2( -0.0412903, 8 )
+
+[sub_resource type="SegmentShape2D" id=3]
+a = Vector2( -0.0412903, -8 )
+b = Vector2( -0.0412903, 8 )
+
+[sub_resource type="SegmentShape2D" id=4]
+a = Vector2( -0.0412903, -8 )
+b = Vector2( -0.0412903, 8 )
+
+[sub_resource type="SegmentShape2D" id=5]
+a = Vector2( 0, -8 )
+b = Vector2( 0, 8 )
+
+[sub_resource type="SegmentShape2D" id=6]
+a = Vector2( -0.0412903, -8 )
+b = Vector2( -0.0412903, 8 )
+
+[sub_resource type="SegmentShape2D" id=7]
+a = Vector2( -7.91742, 0 )
+b = Vector2( 8.08258, 0 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 8.04336, 7.99018 )
+
+[sub_resource type="SegmentShape2D" id=9]
+a = Vector2( 8, 0 )
+b = Vector2( -8, 0 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="dungeon_tiles" type="Sprite" parent="."]
+position = Vector2( -96.0413, 1.05643 )
+texture = ExtResource( 1 )
+offset = Vector2( 112.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 32, 32, 16, 16 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="dungeon_tiles"]
+position = Vector2( 112.041, 14.9436 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dungeon_tiles/KinematicBody2D"]
+position = Vector2( -0.0412903, -8 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="dungeon_tiles/KinematicBody2D"]
+position = Vector2( -7.95871, 0 )
+shape = SubResource( 2 )
+
+[node name="dungeon_tiles10" type="Sprite" parent="."]
+position = Vector2( -96.0413, 17.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 112.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 32, 48, 16, 16 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="dungeon_tiles10"]
+position = Vector2( 112, 14.9436 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dungeon_tiles10/KinematicBody2D"]
+position = Vector2( -7.91743, 0 )
+shape = SubResource( 3 )
+
+[node name="dungeon_tiles11" type="Sprite" parent="."]
+position = Vector2( -96.0413, 33.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 112.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 32, 64, 16, 16 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="dungeon_tiles11"]
+position = Vector2( 112.041, 14.9436 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dungeon_tiles11/KinematicBody2D"]
+position = Vector2( -7.95872, 0 )
+shape = SubResource( 4 )
+
+[node name="dungeon_tiles16" type="Sprite" parent="."]
+position = Vector2( -96.0413, 49.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 112.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 32, 90, 16, 16 )
+
+[node name="dungeon_tiles23" type="Sprite" parent="."]
+position = Vector2( -96.0413, 49.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 112.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 32, 80, 16, 16 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="dungeon_tiles23"]
+position = Vector2( 112, 14.9436 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dungeon_tiles23/KinematicBody2D"]
+position = Vector2( -7.95871, 0 )
+shape = SubResource( 5 )
+
+[node name="dungeon_tiles30" type="Sprite" parent="."]
+position = Vector2( -96.0413, 65.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 112.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 32, 96, 16, 16 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="dungeon_tiles30"]
+position = Vector2( 112.041, 14.9436 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dungeon_tiles30/KinematicBody2D"]
+position = Vector2( -7.95872, 0 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="dungeon_tiles30/KinematicBody2D"]
+position = Vector2( -0.0825882, 8 )
+shape = SubResource( 7 )
+
+[node name="dungeon_tiles37" type="Sprite" parent="."]
+position = Vector2( -96.0413, 89.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 112.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 32, 192, 16, 16 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="dungeon_tiles37"]
+position = Vector2( 111.959, 14.9436 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dungeon_tiles37/KinematicBody2D"]
+shape = SubResource( 8 )
+
+[node name="dungeon_tiles2" type="Sprite" parent="."]
+position = Vector2( -96.0413, 1.05643 )
+texture = ExtResource( 1 )
+offset = Vector2( 128.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 48, 32, 16, 16 )
+
+[node name="dungeon_tiles8" type="Sprite" parent="."]
+position = Vector2( -96.0413, 17.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 128.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 48, 48, 16, 16 )
+
+[node name="dungeon_tiles13" type="Sprite" parent="."]
+position = Vector2( -96.0413, 33.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 128.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 48, 64, 16, 16 )
+
+[node name="dungeon_tiles20" type="Sprite" parent="."]
+position = Vector2( -96.0413, 49.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 128.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 48, 90, 16, 16 )
+
+[node name="dungeon_tiles22" type="Sprite" parent="."]
+position = Vector2( -96.0413, 49.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 128.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 48, 80, 16, 16 )
+
+[node name="dungeon_tiles28" type="Sprite" parent="."]
+position = Vector2( -96.0413, 65.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 128.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 48, 96, 16, 16 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="dungeon_tiles28"]
+position = Vector2( 128.041, 14.9436 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dungeon_tiles28/KinematicBody2D"]
+position = Vector2( 0, 8 )
+shape = SubResource( 9 )
+
+[node name="dungeon_tiles39" type="Sprite" parent="."]
+position = Vector2( -96.0413, 89.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 128.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 48, 192, 16, 16 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="dungeon_tiles39"]
+position = Vector2( 128, 14.9436 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dungeon_tiles39/KinematicBody2D"]
+shape = SubResource( 8 )
+
+[node name="dungeon_tiles3" type="Sprite" parent="."]
+position = Vector2( -96.0413, 1.05643 )
+texture = ExtResource( 1 )
+offset = Vector2( 144.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 64, 32, 16, 16 )
+
+[node name="dungeon_tiles6" type="Sprite" parent="."]
+position = Vector2( -96.0413, 17.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 144.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 64, 48, 16, 16 )
+
+[node name="dungeon_tiles15" type="Sprite" parent="."]
+position = Vector2( -96.0413, 33.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 144.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 64, 64, 16, 16 )
+
+[node name="dungeon_tiles18" type="Sprite" parent="."]
+position = Vector2( -96.0413, 49.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 144.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 64, 90, 16, 16 )
+
+[node name="dungeon_tiles21" type="Sprite" parent="."]
+position = Vector2( -96.0413, 49.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 144.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 64, 80, 16, 16 )
+
+[node name="dungeon_tiles27" type="Sprite" parent="."]
+position = Vector2( -96.0413, 65.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 144.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 64, 96, 16, 16 )
+
+[node name="dungeon_tiles38" type="Sprite" parent="."]
+position = Vector2( -96.0826, 89.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 144.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 64, 192, 16, 16 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="dungeon_tiles38"]
+position = Vector2( 144.041, 14.9436 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dungeon_tiles38/KinematicBody2D"]
+shape = SubResource( 8 )
+
+[node name="dungeon_tiles4" type="Sprite" parent="."]
+position = Vector2( -96.0413, 1.05643 )
+texture = ExtResource( 1 )
+offset = Vector2( 160.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 80, 32, 16, 16 )
+
+[node name="dungeon_tiles7" type="Sprite" parent="."]
+position = Vector2( -96.0413, 17.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 160.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 80, 48, 16, 16 )
+
+[node name="dungeon_tiles14" type="Sprite" parent="."]
+position = Vector2( -96.0413, 33.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 160.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 80, 64, 16, 16 )
+
+[node name="dungeon_tiles19" type="Sprite" parent="."]
+position = Vector2( -96.0413, 49.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 160.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 80, 90, 16, 16 )
+
+[node name="dungeon_tiles25" type="Sprite" parent="."]
+position = Vector2( -96.0413, 49.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 160.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 80, 80, 16, 16 )
+
+[node name="dungeon_tiles26" type="Sprite" parent="."]
+position = Vector2( -96.0413, 65.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 160.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 80, 96, 16, 16 )
+
+[node name="dungeon_tiles5" type="Sprite" parent="."]
+position = Vector2( -96.0413, 1.05643 )
+texture = ExtResource( 1 )
+offset = Vector2( 176.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 96, 32, 16, 16 )
+
+[node name="dungeon_tiles9" type="Sprite" parent="."]
+position = Vector2( -96.0413, 17.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 176.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 96, 48, 16, 16 )
+
+[node name="dungeon_tiles12" type="Sprite" parent="."]
+position = Vector2( -96.0413, 33.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 176.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 96, 64, 16, 16 )
+
+[node name="dungeon_tiles17" type="Sprite" parent="."]
+position = Vector2( -96.0413, 49.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 176.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 96, 90, 16, 16 )
+
+[node name="dungeon_tiles24" type="Sprite" parent="."]
+position = Vector2( -96.0413, 49.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 176.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 96, 80, 16, 16 )
+
+[node name="dungeon_tiles29" type="Sprite" parent="."]
+position = Vector2( -96.0413, 65.0564 )
+texture = ExtResource( 1 )
+offset = Vector2( 176.041, 14.9436 )
+region_enabled = true
+region_rect = Rect2( 96, 96, 16, 16 )
+
